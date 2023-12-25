@@ -1,0 +1,116 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+#html-main{
+    height: 100%;
+}
+body, main{
+    height: 100%;
+}
+body{
+    background-color: #76211C;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+h1, h2{
+    font-family: spumoni, sans;
+    color: rgb(255, 255, 255);
+}
+h2{
+    font-size: 2em;
+    color: #76211C;
+}
+h5{
+    color: #76211C;
+}
+#body-container{
+    height: 100%;
+}
+.font-spumoni{
+    font-family: spumoni, sans;
+}
+.logo{
+    font-size: 1.8em;
+}
+
+/* HEADER */
+header{
+    background-color: #76211C;
+}
+#header-home{
+    background-color: #76201cb0;
+}
+nav{
+    font-size: 1.2em;
+}
+nav .dropdown-item:hover{
+    background-color: #ffc10736;
+}
+a:hover{
+    color: #FFC107;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin: 0 1em;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN */
+#main-home{
+    background-image: url("../imgs/sala1-1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+main{
+    height: 100%;
+    margin-bottom: 4em;
+    background-color: e8e1cc;
+}
+
+/* FOOTER */
+footer{
+    background-color: #76211C;
+    color: white;
+}
+
+/* ABOUT */
+section{
+    background-color: #e8e1cc;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 1em;
+    color: #524947;
+}
+section b{
+    color: #342f2f;
+}
+section a{
+    color: #342f2f;
+}
+section a:hover{
+    color: #86423f;
+}
+h3{
+    color: #76211C;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1em 0;
+    letter-spacing: 3px;
+    font-size: 2.5em;
+}
+.about table{
+    width: 100%;
+    text-align: center;
+}
+#storia strong{
+    color: #76211C;
+}
