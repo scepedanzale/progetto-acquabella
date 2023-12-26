@@ -10,17 +10,24 @@
     <title>Su di noi - Osteria Dell'Acquabella</title>
 </head>
 <body>
-    <header id="header-home" class="sticky-top">
-        <nav class="navbar navbar-expand-md">
+    <header id="header-home" class="sticky-top shadow-lg">
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <div class="font-spumoni logo navbar-brand">
-              <a href="index.html">Osteria Dell'Acquabella</a>
+              <a href="index.html" class="fs-">Osteria Dell'Acquabella</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list text-white fs-1"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <ul class="d-flex flex-column flex-md-row justify-content-center m-0 p-0 py-3">
+              <ul class="d-flex flex-column flex-lg-row justify-content-center m-0 p-0 py-3">
+                <li class="mb-4 d-lg-none">
+                  <a target="_blank" href="https://wa.me/393471396520" class="mx-2"><i class="bi bi-whatsapp"></i></a>
+                  <a target="_blank" href="https://www.instagram.com/osteria_acquabella/" class="mx-2"><i class="bi bi-instagram"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/osteriadellacquabella" class="mx-2"><i class="bi bi-facebook"></i></a>
+                  <a target="_blank" href="https://www.tripadvisor.it/Restaurant_Review-g187849-d1095150-Reviews-Osteria_dell_Acquabella-Milan_Lombardy.html" class="fs-4 mx-2"><i class="fa fa-tripadvisor"></i></a>
+                  <a href="mailto:prenotazioni@acquabella.it" class="mx-2"><i class="bi bi-envelope"></i></a>
+                </li>
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown w-25">
                   <a href="cucina.html" class="dropdown-toggle" role="button" data-bs-toggle="dropdown">La Cucina</a>
@@ -30,7 +37,7 @@
                     <li><a class="dropdown-item" href="cucina.html#piatti-unici">Piatti Unici</a></li>
                     <li><a class="dropdown-item" href="cucina.html#primi">Primi</a></li>
                     <li><a class="dropdown-item" href="cucina.html#secondi">Secondi</a></li>
-                    <li><a class="dropdown-item" href="cucina.html#contorni">Contorni e Formaggi</a></li>
+                    <li><a class="dropdown-item" href="cucina.html#contorni">Contorni</a></li>
                     <li><a class="dropdown-item" href="cucina.html#dolci">Dolci</a></li>
                   </ul>
                 </li>
@@ -43,6 +50,7 @@
                     <li><a class="dropdown-item" href="about.html#contatti">Contatti</a></li>
                   </ul>
                 </li>
+                
               </ul>  
             </div>
           </div>
@@ -50,7 +58,7 @@
     </header>
     
     <main>
-        <h1 class="p-3 m-0">Su di Noi</h1>
+        <h1 class="p-3 m-0 font-spumoni">Su di Noi</h1>
         
         <section id="storia" class="about">
             <!-- storia -->
@@ -220,13 +228,13 @@
             <p>
                 Per le prenotazioni e per tutte le informazioni che riguardano 
                 l’organizzazione di pranzi e cene potete contattarci, <u>durante gli 
-                    orari di apertura</u>, al numero <b>+39 02 58309653</b>, oppure inviare 
-                una e-mail all'indirizzo <b>prenotazioni@acquabella.it</b>
+                    orari di apertura</u>, al numero <b class="user-select-all">+39 02 58309653</b>, oppure inviare 
+                una e-mail all'indirizzo <b><a href="mailto:prenotazioni@acquabella.it" class="user-select-all">prenotazioni@acquabella.it</a></b>
             </p>
             <p class="border border-1 border-black p-3">
                 TUTTI I NOSTRI PIATTI SONO DISPONIBILI PER L'ASPORTO!
                 <br>
-                Scrivici su WhatsApp al <b>+39 3471396520</b>
+                Scrivici su WhatsApp al <b><a href="https://wa.me/393471396520" target="_blank" class="user-select-all">+39 3471396520 <i class="bi bi-whatsapp fs-4"></i></a></b>
             </p>
             <p>
                 Non dimenticare di seguirci sui nostri social per restare aggiornato sulle novità e sulle <b>OFFERTE GIORNALIERE!</b>
@@ -236,32 +244,43 @@
                     <a href="https://www.tripadvisor.it/Restaurant_Review-g187849-d1095150-Reviews-Osteria_dell_Acquabella-Milan_Lombardy.html" class="fs-3 social" target="_blank"><i class="fa fa-tripadvisor"></i></a>
                 </div>
             </p>
-            
         </section>
-    </main>
-    <footer class="text-center p-4 shadow-lg">
         <div class="container-fluid">
-            <div class="row align-items-center">
+            <div class="row">
+              <div class="col-12 text-end m-0">
+                <a href="#storia" class="text-decoration-underline"><i class="bi bi-arrow-up fs-5"></i>TORNA SU</a>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer class="text-center shadow-lg">
+        <div class="container-fluid">
+            <div class="row align-items-center p-5">
                 <!-- telefono e email -->
-                <div class="col-12 order-2 order-md-0 col-md-4 p-0 text-center">
+                <div class="col-12 col-lg-4 order-2 order-lg-0 p-0 text-center">
                     <p class="m-0">Tel: <b class="user-select-all">+39 02 58309653</b></p>
-                    <p class="m-0">Email: <b class="user-select-all">prenotazioni@acquabella.it</b></p>
+                    <a href="mailto:prenotazioni@acquabella.it" class="user-select-all"><p class="m-0">Email: <b>prenotazioni@acquabella.it</b></p></a>
                 </div>
                 <!-- via e piva -->
-                <div class="col-12 order-0 order-md-1 col-md-4 p-0">
+                <div class="col-12 col-lg-4 order-0 order-lg-1 p-0">
                     <ul class="list-unstyled m-0">
                         <li>Osteria dell'Acquabella S.r.l.</li>
                         <li class="text-warning user-select-all">Via San Rocco n° 11 - 20135 Milano</li>
-                        <li>P.Iva 04013720968</li>
+                        <li class="fs-6"><a href="privacy.html" class="text-decoration-underline">Privacy e Cookies</a> - P.Iva 04013720968</li>
                     </ul>
                 </div>
                 <!-- social -->
-                <div class="col-12 order-1 order-md-2 col-md-4 p-3 text-center fs-4">
-                    <a href="https://www.instagram.com/osteria_acquabella/"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.facebook.com/osteriadellacquabella"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.tripadvisor.it/Restaurant_Review-g187849-d1095150-Reviews-Osteria_dell_Acquabella-Milan_Lombardy.html" class="fs-3" target="_blank"><i class="fa fa-tripadvisor"></i></a>
-                    
-                </div>
+                <div class="col-12 col-lg-4 p-3 order-1 order-lg-2 text-center fs-4">
+                    <a target="_blank" href="https://wa.me/393471396520" class="user-select-all"><i class="bi bi-whatsapp"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/osteria_acquabella/"><i class="bi bi-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/osteriadellacquabella"><i class="bi bi-facebook"></i></a>
+                    <a target="_blank" href="https://www.tripadvisor.it/Restaurant_Review-g187849-d1095150-Reviews-Osteria_dell_Acquabella-Milan_Lombardy.html" class="fs-4"><i class="fa fa-tripadvisor"></i></a>
+                  </div>
+            </div>
+            <div class="row copyright shadow-lg p-2">
+              <div class="col-12">
+                <p class="text-center text-lg-start m-0">&copy;2023 Osteria dell'Acquabella</p>
+              </div>
             </div>
         </div>
     </footer>

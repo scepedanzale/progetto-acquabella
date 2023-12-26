@@ -9,27 +9,40 @@ body, main{
 body{
     background-color: #76211C;
     font-family: Arial, Helvetica, sans-serif;
-  
+    
     letter-spacing: 1px;
     user-select: none;
-}
-
-h1, h2{
-    font-family: spumoni, sans;
-    color: rgb(255, 255, 255);
-}
-h2{
-    font-size: 2em;
-    color: #76211C;
-}
-h5{
-    color: #76211C;
 }
 #body-container{
     height: 100%;
 }
 .font-spumoni{
     font-family: spumoni, sans;
+}
+.bordeaux{
+    color: #76211C;
+}
+p{
+    margin: 0;
+}
+
+/* 
+    H1 -> titoli pagine 
+    H3 -> titoli sezioni
+*/
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+}
+h3, .h3{
+    text-align: center;
+    padding: 1em 0;
+    letter-spacing: 3px;
+    font-size: 2.5em;
+}
+h3, h5{
+    color: #76211C;
+    font-weight: bolder;
 }
 .logo{
     font-size: 1.8em;
@@ -62,25 +75,29 @@ a{
     text-decoration: none;
     color: white;
 }
-
+.logo{
+    font-size: 1.3em;
+}
 /* MAIN */
 #main-home{
     background-image: url("../imgs/sala1-1.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 main{
     height: 100%;
     margin-bottom: 4em;
     background-color: e8e1cc;
 }
-
-/* FOOTER */
-footer{
-    background-color: #76211C;
-    color: white;
+.hero{
+    background-color: rgba(0, 0, 0, 0.517);
 }
+.hero h1{
+    font-size: 6em;
+}
+
 
 /* ABOUT */
 section{
@@ -90,22 +107,11 @@ section{
     border-radius: 1em;
     color: #524947;
 }
-section b{
-    color: #342f2f;
-}
-section a{
+section b, section a{
     color: #342f2f;
 }
 section a:hover{
     color: #86423f;
-}
-h3{
-    color: #76211C;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1em 0;
-    letter-spacing: 3px;
-    font-size: 2.5em;
 }
 .about table{
     width: 100%;
@@ -113,4 +119,44 @@ h3{
 }
 #storia strong{
     color: #76211C;
+}
+
+
+/* CUCINA */
+
+.cucina li{
+    background-color: #76201c13;
+    padding: 1em;
+}
+.cucina span{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #76211C;
+    color: white;
+}
+footer .fa, footer .bi{
+    font-size: 1.3em;
+    margin: 0 0.3em;
+}
+.copyright{
+    
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.661);
+}
+
+
+@media screen and (max-width: 450px){
+    #main-home .hero h1{
+        font-size: 2.5em;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 600px){
+    #main-home .hero h1{
+        font-size: 4em;
+    }
 }
