@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVJXw9pMjCBR1nKX_ji4dspb4Pus93efY&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
     <title>Su di noi - Osteria Dell'Acquabella</title>
 </head>
 <body>
@@ -81,7 +83,7 @@
                             esperienza come Patronne del ristorante "La Lanterna" in via Lanzone, sempre a Milano, 
                             decide di rilevare questo locale ed attrezzarlo come punto di ristoro per operai ed impiegati 
                             delle numerose fabbriche ed uffici presenti in zona, senza disdegnare l'attività di osteria 
-                            con mescita e gioco delle carte; il tutto con grande successo fino alla fine degli annni 70', 
+                            con mescita e gioco delle carte; il tutto con grande successo fino alla fine degli anni 70', 
                             periodo in cui il mitico Mario lascia il locale e la gestione ad altri. 
                         </p>
                     </div>
@@ -275,17 +277,32 @@
                 </div>
                 <p class="text-center mt-4"><i><u>ATTENZIONE:</u> durante le festività gli orari potrebbero variare</i></p>
             </section>
+            <!-- dove siamo -->
             <section id="dove" class="about">
-                <!-- dove siamo -->
                 <h3 class="font-spumoni">Dove Siamo</h3>
-                <p>Ci troviamo in <b>via San Rocco n° 11 - 20135 Milano</b> (zona Porta Romana M3) <br> 
-                    All'angolo con via Gaetana Agnesi.</p>
-                <p><b>Mezzi di trasporto:</b></p>
-                <ul>
-                    <li>Metro gialla (M3)</li>
-                    <li>Autobus: 65, 62, 90</li>
-                    <li>Tram: 9, 24</li>
-                </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Ci troviamo in <b>via San Rocco n° 11 - 20135 Milano</b> <br>  
+                                All'angolo con via Gaetana Agnesi.<br> 
+                                (Zona Porta Romana M3)</p>
+                        </div>
+                        <div class="col-12">
+                            <p><b>Mezzi di trasporto:</b></p>
+                            <ul>
+                                <li>Metro gialla (M3)</li>
+                                <li>Autobus: 65, 62, 90</li>
+                                <li>Tram: 9, 24</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 gmp-map">
+                            <gmp-map center="45.44993209838867,9.201306343078613" zoom="14" map-id="DEMO_MAP_ID">
+                                <gmp-advanced-marker position="45.44993209838867,9.201306343078613" title="My location"></gmp-advanced-marker>
+                              </gmp-map>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </div>
         <section id="contatti" class="about mb-2 text-center">

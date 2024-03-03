@@ -5,6 +5,14 @@
     src: url("../spumoni/Spumoni.otf") format("opentype")
     }
 
+gmp-map {
+    height: 100%;
+    width: 100%;
+}
+div.gmp-map{
+    height: 20em;
+}
+
 #html-main{
     height: 100%;
 }
@@ -123,8 +131,13 @@ section a:hover{
 #storia strong{
     color: #76211C;
 }
-#orari table tr{
+#orari .row{
     background-color: #76201c13;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0;
+}
+#orari p{
+    margin: 0;
 }
 
 /* CUCINA */
