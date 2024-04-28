@@ -1,53 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Privacy e Cookies - Osteria dell'Acquabella</title>
-</head>
-<body>
-    <header id="header-home" class="sticky-top">
-        <nav class="navbar navbar-expand-md">
-          <div class="container-fluid">
-            <div class="font-spumoni logo navbar-brand">
-              <a href="index.html">Osteria Dell'Acquabella</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list text-white fs-1"></i>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <ul class="d-flex flex-column flex-md-row justify-content-center m-0 p-0 py-3">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown w-25">
-                  <a href="cucina.html" class="dropdown-toggle" role="button" data-bs-toggle="dropdown">La Cucina</a>
-                  
-                  <ul class="dropdown-menu dropend dropdown-menu-md-end">
-                    <li><a class="dropdown-item" href="cucina.html#antipasti">Antipasti</a></li>
-                    <li><a class="dropdown-item" href="cucina.html#piatti-unici">Piatti Unici</a></li>
-                    <li><a class="dropdown-item" href="cucina.html#primi">Primi</a></li>
-                    <li><a class="dropdown-item" href="cucina.html#secondi">Secondi</a></li>
-                    <li><a class="dropdown-item" href="cucina.html#contorni">Contorni</a></li>
-                    <li><a class="dropdown-item" href="cucina.html#dolci">Dolci</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown w-25">
-                  <a href="about.html" class="dropdown-toggle" role="button" data-bs-toggle="dropdown">Su di Noi</a>
-                  <ul class="dropdown-menu dropdown-menu-md-end">
-                    <li><a class="dropdown-item" href="about.html#storia">La Nostra Storia</a></li>
-                    <li><a class="dropdown-item" href="about.html#orari">Orari</a></li>
-                    <li><a class="dropdown-item" href="about.html#dove">Dove Siamo</a></li>
-                    <li><a class="dropdown-item" href="about.html#contatti">Contatti</a></li>
-                  </ul>
-                </li>
-              </ul>  
-            </div>
-          </div>
-        </nav> 
-    </header>
+<?php require_once 'header.php'?>
+
     <main>
         <section id="privacy">
             <h3 class="text-center font-spumoni">Informativa sulla Privacy</h3>

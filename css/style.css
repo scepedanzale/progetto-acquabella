@@ -18,7 +18,7 @@ div.gmp-map{
 }
 
 #html-main{
-    height: 100%;
+    min-height: 100%;
 }
 body, main{
     height: 100%;
@@ -41,6 +41,8 @@ body{
 }
 
 
+
+
 /* 
     H1 -> titoli pagine 
     H3 -> titoli sezioni
@@ -51,7 +53,7 @@ h1{
 }
 h3, .h3{
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
     letter-spacing: 3px;
     font-size: 2.5em;
 }
@@ -93,6 +95,7 @@ a{
 .logo{
     font-size: 1.3em;
 }
+
 /* MAIN */
 #main-home{
     background-image: url("../imgs/sala1-1.jpeg");
@@ -100,6 +103,7 @@ a{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: 5em;
 }
 main{
     height: 100%;
@@ -108,18 +112,26 @@ main{
 }
 .hero{
     background-color: rgba(0, 0, 0, 0.517);
+    padding: 10em 2em;
 }
 .hero h1{
     font-size: 6em;
 }
-
+#info-section{
+    background-color: #e8e1cce6;
+    color: rgb(48, 48, 48);
+    box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.422), -1em -1em 1em  rgba(0, 0, 0, 0.553);
+    font-size: 1.1em;
+    height: fit-content;
+    margin-top: 5em;
+}
 
 /* ABOUT */
 section{
     background-color: #e8e1cc;
     margin: 2em;
     padding: 2em;
-    border-radius: 1em;
+    border-radius: 0.4em;
     color: #524947;
 }
 section b, section a{
@@ -144,11 +156,12 @@ section a:hover{
     margin: 0;
 }
 
-/* CUCINA */
 
+/* CUCINA */
 .cucina li{
     background-color: #76201c13;
     padding: 1em;
+    border-radius: 0.5em;
 }
 .cucina span{
     font-size: 0.9em;
@@ -185,4 +198,54 @@ footer .fa, footer .bi{
     #main-home .hero h1{
         font-size: 4em;
     }
+}
+
+
+/* animazione */
+
+#home{
+    opacity: 0%;
+}
+.home-entrance{
+    animation: home-entrance 1s linear forwards;
+}
+@keyframes home-entrance{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* alert cookie */
+
+#alert-container{
+    background-color: #FEF3CD !important;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0.6em;
+    padding: 1em;
+}
+.alert{
+    background-color: #1111114a;
+    box-shadow: 1em 1em 10em 10em rgba(0, 0, 0, 0.528);
+    z-index: 200;
+    position: fixed;
+    top: 0%;
+    border: none !important;
+    margin: 0;
+    height: 100%;
+    padding: 5em 1em;
+}
+.cookie-alert-btn{
+    background-color: #76211C;
+    color: white;
+}
+.cookie-alert-btn:hover{
+    border: 1px solid #76211C;
 }
